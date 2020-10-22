@@ -20,12 +20,12 @@ The Business Case for this project is for any labroratory or organization that h
  
 Please see the goals of the code contained in the master notebook below. 
  ### Master_notebook.ipynb
-    - Import all necessary libraries and modules to use and manipulate image data as well as build  models
-    - For ease of use, multiple functions are declared at the top of the notebook
-    - Look at Regular and Infected Cells to look for visual differences
-    - Look at dataset's class distribtuions and use to build a dummy classifier model
-    - Prepare both complicated and simple CNN models to see how well they perform classfications, try different hyperparamters to optimize performance.
-    - Compare Models' performances on evaluation metrics and select the best performing model
-    - Select Final model and test for overfitting, correct for overfitting accordingly
-    - Look at final model's misclassifications and analyze those
-    - Present Conclusions,recommendations, next steps
+  - Import all necessary libraries and modules to use and manipulate image data as well as build  models
+  - For ease of use, multiple functions are declared at the top of the notebook
+  - Look at Regular and Infected Cells to look for visual differences
+  - Look at dataset's class distribtuions and use to build a dummy classifier model
+  - Prepare both complicated and simple CNN models to see how well they perform classfications, try different hyperparamters to optimize performance.
+  - Compare Models' performances on evaluation metrics and select the best performing model
+  - Select Final model and test for overfitting, correct for overfitting accordingly
+  - Look at final model's misclassifications and analyze those
+  - Present Conclusions,recommendations, next steps
