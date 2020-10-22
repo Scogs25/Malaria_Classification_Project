@@ -41,3 +41,8 @@ Due to it outperforming all other models, We selected the Complex CNN model as o
 ![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Final_model_Confusion_Matrix.png)
 
 As can be seen above, this model accuractly classifies whether or not a cell is infected and it also minimizes incorrect classifications. Thus, we can feel confident this model can be highly effective as a diagnosis tool.
+
+## Visualizing Classifications 
+
+## Conclusions 
+![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Modeling_Accuracy_Comparisons.png)
