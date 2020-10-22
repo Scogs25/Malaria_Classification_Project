@@ -7,8 +7,7 @@ By Michael Scognamiglio and Amir Edris
 1. Modeling 
 1. Final Modeling and Analysis
 1. Visualizing Classifications
-1. Conclusions 
-1. Next Steps
+1. Conclusions/ Next Steps
 ## Project Overview
 Malaria is silently a large killer to this day. In fact, every year there are over 200 million cases with about 400,000 deaths.
 Malaria is caused due to parasites transmitted through mosquito bites. Thus, Parasite counts are used to diagnose malaria  correctly. However, the manual counting of parasites varies depending on the skill and expertise of the microscopist. Depending on the conditions and treament of these scientisits, accurate diagnosis can vary. Thus, the goal of this project is to create a highly accurate image classification model that can quickly and effictively diagnose Malaria.The model will be trained on a kaggle dataset of approximatly 28,000 photos of infected and uninfected cells. The original dataset cvan be found on Kaggle at the following link: https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria
@@ -45,5 +44,10 @@ As can be seen above, this model accuractly classifies whether or not a cell is 
 
 ## Visualizing Classifications 
 
-## Conclusions 
+## Conclusions/Next Steps 
 ![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Modeling_Accuracy_Comparisons.png)
+
+Through this project, we generated a few insights that we felt were worth sharing.
+1.In the case of misclassifications, we found that non parasite impurities were often misrecognized as parasites thus causing the misclassification. Thus, we would recommend screening through that data as much as possible before training your model. If possible, try to minimize the ambuiguity of cells. In other words, try to avoid cells with imopurites resembling parasites. 
+1. We found two hyperparameters that were the most effective in boosting model performance. Those two parameters were the complexity of the CNN Model and the order of convolutional layers. We would thus recommend to begin with a simpler CNN but iteratively build it's complexity until you are satisfied with the model. We would also recommend testing different orders for the convultional layers to find which best works for your models. 
+1. One area we would like to experiment with in the future is images containing mutiple cells. In terms of data collection, this method would be much quicker. It would also provide the model with more information. In the case of a CNN model, this is likely to result in the model finding more patterns it can use to help its classification abilites. Thus, we believe this type of model could boost performance even further
