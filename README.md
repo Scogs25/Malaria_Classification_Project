@@ -37,6 +37,7 @@ For Modeling, We believed that testing four types of models and consistently alt
 
 ## Final Modeling and Analysis 
 Due to it outperforming all other models, We selected the Complex CNN model as our final model. Achieving 95% Accuracy on both our test sets and validation sets was certainly impressive. Also, this model achieved a recall of .96 on the infected class, We were very satisified with this result because it proved that we are effectively limiting our false negatives as well.
+
 ![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Final_model_Accuraccy_curve.png)
 ![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Final_model_Confusion_Matrix.png)
 
