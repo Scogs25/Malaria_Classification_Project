@@ -19,7 +19,7 @@ The Business Case for this project is for any labroratory or organization that h
  All visulaizations used for both this Readme and the presenation pdf can be found in the pngs folder.
  The pdf 'Malaria_Detection_Classifier' contains the  pdf presentation of this project.
  
-Please see the goals of the code contained in the master notebook below. 
+Please see the goals of the code contained in the notebooks below. 
  ### Master_notebook.ipynb
   - Import all necessary libraries and modules to use and manipulate image data as well as build  models
   - For ease of use, multiple functions are declared at the top of the notebook
@@ -30,6 +30,8 @@ Please see the goals of the code contained in the master notebook below.
   - Select Final model and test for overfitting, correct for overfitting accordingly
   - Look at final model's misclassifications and analyze those
   - Present Conclusions,recommendations, next steps
+ ### Model interp.ipynb
+ - contains code aand functions to visualize what the model is seeing at different layers of the netework
  
 ## Modeling 
 For Modeling, We believed that testing four types of models and consistently altering hyper parameters would best allow us to find the ideal model. We first created a dummy model that would predict the dominant class. However, as you can see above, there was no numerically dominant class. Thus, We chose the infected class as the dominant to minimize false negatives. This model achieved an accuracy of exactly 50%. We also decided to create a simpler CNN model with less convultional and dense layers. This model achieved an accuracy of 93% on the validation set. We then decided to create a more complex CNN model to see how well it would perform. The complex CNN model achieved an accuracy of about 95% on the validation set. We then decided to use Transfer Learning to determine whether that could further improve performance. We used Google's prebuilt Model InceptionV3 which is trained on large amounts of medical data.  We acheived an accuracy of 92% on the validation set for that model.
@@ -43,6 +45,18 @@ Due to it outperforming all other models, We selected the Complex CNN model as o
 As can be seen above, this model accuractly classifies whether or not a cell is infected and it also minimizes incorrect classifications. Thus, we can feel confident this model can be highly effective as a diagnosis tool.
 
 ## Visualizing Classifications 
+It is very difficult to visualize what CNNs are actually doing. CNNs contain dense layers much like their more basic counterparts, however, they also contain convolutional layers. Convolutional layers can be thought of as a group of filters that the model can tweak to find patterns in images.  We can actually use these layers to visualize what the model is doing because their outputs are images. On top of that, using a method from Google DeepDream, We can tweak images toward the direction that will make the model more excited. These results can be interpreted as the patterns that the model is searching for within an image.  Between the input, the individual layer outputs,  and Google Deepdream  images, we are confident that we can  accurately intepret how our model is classsifying images.
+
+## Conclusions/Next Steps 
+![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Modeling_Accuracy_Comparisons.png)
+
+Through this project, we generated a few insights that we felt were worth sharing.
+toward the direction that will make the model more excited. These results can be interpreted as the patterns the model is searching for within an image.  Between the input, the individual layer outputs,  and Google Deepdream  images, we arre confident that we can  accurately intepret how our model is classsifying. 
+
+## Conclusions/Next Steps 
+![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Modeling_Accuracy_Comparisons.png)
+
+Through this project, we generated a few insights that we felt were worth sharing.
 
 ## Conclusions/Next Steps 
 ![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Modeling_Accuracy_Comparisons.png)
