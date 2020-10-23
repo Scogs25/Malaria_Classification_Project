@@ -47,16 +47,6 @@ As can be seen above, this model accuractly classifies whether or not a cell is 
 ## Visualizing Classifications 
 It is very difficult to visualize what CNNs are actually doing. CNNs contain dense layers much like their more basic counterparts, however, they also contain convolutional layers. Convolutional layers can be thought of as a group of filters that the model can tweak to find patterns in images.  We can actually use these layers to visualize what the model is doing because their outputs are images. On top of that, using a method from Google DeepDream, We can tweak images toward the direction that will make the model more excited. These results can be interpreted as the patterns that the model is searching for within an image.  Between the input, the individual layer outputs,  and Google Deepdream  images, we are confident that we can  accurately intepret how our model is classsifying images.
 
-## Conclusions/Next Steps 
-![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Modeling_Accuracy_Comparisons.png)
-
-Through this project, we generated a few insights that we felt were worth sharing.
-toward the direction that will make the model more excited. These results can be interpreted as the patterns the model is searching for within an image.  Between the input, the individual layer outputs,  and Google Deepdream  images, we arre confident that we can  accurately intepret how our model is classsifying. 
-
-## Conclusions/Next Steps 
-![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Modeling_Accuracy_Comparisons.png)
-
-Through this project, we generated a few insights that we felt were worth sharing.
 
 ## Conclusions/Next Steps 
 ![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Modeling_Accuracy_Comparisons.png)
