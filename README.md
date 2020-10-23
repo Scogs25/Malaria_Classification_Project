@@ -13,6 +13,7 @@ Malaria is silently a large killer to this day. In fact, every year there are ov
 Malaria is caused due to parasites transmitted through mosquito bites. Thus, Parasite counts are used to diagnose malaria  correctly. However, the manual counting of parasites varies depending on the skill and expertise of the microscopist. Depending on the conditions and treament of these scientisits, accurate diagnosis can vary. Thus, the goal of this project is to create a highly accurate image classification model that can quickly and effictively diagnose Malaria.The model will be trained on a kaggle dataset of approximatly 28,000 photos of infected and uninfected cells. The original dataset cvan be found on Kaggle at the following link: https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria
 ## Business Case 
 The Business Case for this project is for any labroratory or organization that has an interest in improving Malaria Diagnosis. Our model will provide many advantages to the currently used manual counting methods. Our model will provide a more reliable and standardized approach to diagnosing Malaria. It will reduce the workload of malaria field workers, thus allowing more patients to be taken care of. It will also reduce the costs related to diagnosis. The primary evaulation metric we used to compare models was accuracy. We chose accuracy becuase there was no class imbalance in our data so it provides us with the best metric to measure how well we are classifying the observations into their actual classes. Recall was the metric that was looked at second closest because it allows us to minimize false negatives (diagnosis is no malaria when the patient has malaria) which for our project is the worst case scenario.
+
 ![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/Class_Distributions.png)
 
 ## Repo Structure and Project Approach
@@ -46,6 +47,8 @@ As can be seen above, this model accuractly classifies whether or not a cell is 
 
 ## Visualizing Classifications 
 It is very difficult to visualize what CNNs are actually doing. CNNs contain dense layers much like their more basic counterparts, however, they also contain convolutional layers. Convolutional layers can be thought of as a group of filters that the model can tweak to find patterns in images.  We can actually use these layers to visualize what the model is doing because their outputs are images. On top of that, using a method from Google DeepDream, We can tweak images toward the direction that will make the model more excited. These results can be interpreted as the patterns that the model is searching for within an image.  Between the input, the individual layer outputs,  and Google Deepdream  images, we are confident that we can  accurately intepret how our model is classsifying images.
+
+![Image](https://github.com/Scogs25/Malaria_Classification_Project/blob/main/pngs/deepdream.png)
 
 
 ## Conclusions/Next Steps 
