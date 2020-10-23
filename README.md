@@ -17,7 +17,7 @@ The Business Case for this project is for any labroratory or organization that h
 
 ## Repo Structure and Project Approach
  All visulaizations used for both this Readme and the presenation pdf can be found in the pngs folder.
- The pdf '" contains the  pdf presentation of this project.
+ The pdf 'Malaria_Detection_Classifier" contains the  pdf presentation of this project.
  
 Please see the goals of the code contained in the master notebook below. 
  ### Master_notebook.ipynb
